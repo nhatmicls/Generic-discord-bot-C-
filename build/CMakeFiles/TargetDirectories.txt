@@ -1,0 +1,3 @@
+/home/micls/Project/Generic-discord-bot-Cpp/build/CMakeFiles/discord-bot.dir
+/home/micls/Project/Generic-discord-bot-Cpp/build/CMakeFiles/edit_cache.dir
+/home/micls/Project/Generic-discord-bot-Cpp/build/CMakeFiles/rebuild_cache.dir
