@@ -32,3 +32,4 @@
 *.app
 
 config/product.json
+build/
