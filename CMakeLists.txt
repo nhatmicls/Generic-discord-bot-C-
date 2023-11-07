@@ -9,6 +9,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 # Create an executable
 add_executable(${PROJECT_NAME}
     src/main.cpp
+    src/config/config.cpp
 )
 
 # Find our pre-installed DPP package (using FindDPP.cmake).
@@ -34,3 +35,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
+
+set(CMAKE_BUILD_TYPE "Debug")
