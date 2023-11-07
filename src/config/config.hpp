@@ -12,8 +12,14 @@
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
+#include <iostream>
+#include <string>
 #include <fstream>
 
 #include "./../../lib/nlohmann/json.hpp"
+
+extern std::string BOT_TOKEN;
+
+std::string read_discord_token();
 
 #endif

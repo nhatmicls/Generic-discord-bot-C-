@@ -1,10 +1,10 @@
 #include "main.hpp"
 
-const std::string BOT_TOKEN = "add your token here";
+std::string BOT_TOKEN = "";
 
 int main()
 {
-    int a = 10;
+    BOT_TOKEN = read_discord_token();
     dpp::cluster bot(BOT_TOKEN);
 
     bot.on_log(dpp::utility::cout_logger());
