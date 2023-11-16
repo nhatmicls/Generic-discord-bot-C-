@@ -17,5 +17,6 @@
 #include <dpp/dpp.h>
 
 #include "config/config.hpp"
+#include "modules/slash_command.hpp"
 
 #endif

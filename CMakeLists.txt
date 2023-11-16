@@ -25,9 +25,9 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${DPP_INCLUDE_DIR}
 )
 
-# Include the Other directories.
-target_include_directories(${PROJECT_NAME} PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/config
+add_subdirectory(src)
+target_link_libraries(${PROJECT_NAME}
+    slash_command
 )
 
 # Set C++ version
@@ -36,4 +36,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
+# Set program in debug stage
 set(CMAKE_BUILD_TYPE "Debug")

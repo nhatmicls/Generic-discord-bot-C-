@@ -9,11 +9,16 @@ int main()
 
     bot.on_log(dpp::utility::cout_logger());
 
-    bot.on_slashcommand([](const dpp::slashcommand_t &event)
-                        {
-        if (event.command.get_command_name() == "ping") {
-            event.reply("Pong!");
-        } });
+    // bot.on_slashcommand([&bot](const dpp::slashcommand_t &event)
+    //                     {
+    //     if (event.command.get_command_name() == "ping") {
+    //         event.reply("Pong!");
+    //     } });
+
+    bot.on_slashcommand([&bot](const dpp::slashcommand_t &event)
+                        { 
+                            dpp::slashcommand_t _event=event;
+                            mapping_slash_command(&bot,_event); });
 
     bot.on_ready([&bot](const dpp::ready_t &event)
                  {

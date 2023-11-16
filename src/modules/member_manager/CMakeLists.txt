@@ -1,0 +1,2 @@
+add_library(member_manager STATIC ./member_manager.cpp)
+target_compile_definitions(member_manager PUBLIC member_manager)
